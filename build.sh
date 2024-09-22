@@ -14,7 +14,7 @@ if [[ $? != 0 ]]; then
 	echo  -n "do you want this script to temporary install SDL2? [Y/n]: "
 	read choice
 
-	if [[ "$choice" == "y" ]]; then
+	if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
 		sudo apt install libsdl2-dev -y
 		g++ -o main src/*.cpp main.cpp -lSDL2
 		sudo apt purge libsdl2-dev -y
