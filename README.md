@@ -6,6 +6,7 @@ so this is what I got so far.
 
 Instructions, switch to root user on the terminal, or use sudo su
 then run the build.sh script example: 
+
 ./build.sh
 
 The reason is, if you do not have SDL2 installed, this script will temporary install SDL2
